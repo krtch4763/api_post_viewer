@@ -80,6 +80,24 @@ class _PostListScreenState extends State<PostListScreen> {
                             color: Colors.grey[700],
                           ),
                         ),
+                        const SizedBox(height: 8),
+                        Row(
+                          children: [
+                            const Icon(
+                              Icons.account_circle,
+                              size: 20,
+                              color: Colors.blueGrey,
+                            ),
+                            const SizedBox(width: 6),
+                            Text(
+                              'UserId: ${post.userId}',
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
